@@ -40,3 +40,12 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Claude ###
+CLAUDE.md
+.claude/
+.claudecontext
+.claudeignore
+claude-context.json
+claude-session.json
+*.claude-backup
