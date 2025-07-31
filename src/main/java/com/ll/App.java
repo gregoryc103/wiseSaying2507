@@ -65,9 +65,10 @@ public class App {
             System.out.println("목록이 비어있습니다.");
         } else{
             System.out.println("-------------------------------------------");
-            for (WiseInput wise : wiseList) {
-                System.out.printf("%d / %s / %s%n", wise.getId(), wise.getAuthor(), wise.getContent());
-            }
+            wiseList.stream()
+                    .sorted((a, b) -> b.getId() - a.getId())
+                    .forEach(wise -> System.out.printf("%d / %s / %s%n",
+                            wise.getId(), wise.getAuthor(), wise.getContent()));
         }
     }
 
