@@ -14,7 +14,7 @@ public class FileUtil {
         try {
             Files.createDirectories(WISE_SAYING_PATH);
 
-        } catch(IOExceptionion e) {
+        } catch(IOException e) {
             System.err.println("Directory 생성 실패: " + e.getMessage());
         }
     }

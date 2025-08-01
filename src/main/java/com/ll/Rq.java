@@ -1,4 +1,4 @@
-package com.ll.util;
+package com.ll;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -11,7 +11,7 @@ public class Rq {
 
     public Rq(String cmd) {
 
-        // 최초 작성 코드
+        // stream() 적용 전 최초 작성 코드
         /*        paramsMap = new HashMap<>();
 
         String[] cmdBits = cmd.split("\\?", 2);
@@ -51,8 +51,7 @@ public class Rq {
                         bits -> bits[0].trim(),
                         bits -> bits[1].trim()
                 ));
-
-        //stream() 적용 ver2
+        // stream() 적용 ver2
         /*
         String[] cmdBits = cmd.split("\\?", 2);
         actionName = cmdBits[0];
@@ -69,7 +68,7 @@ public class Rq {
                 ))
                 : new HashMap<>();*/
 
-        //stream() 적용 ver2
+        // stream() 적용 ver3
         /*String[] cmdBits = cmd.split("\\?", 2);
         actionName = cmdBits[0];
 
@@ -86,7 +85,6 @@ public class Rq {
                         HashMap::new
                 ));*/
     }
-
     public String getActionName() {
         return actionName;
     }
